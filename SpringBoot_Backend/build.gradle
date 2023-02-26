@@ -1,0 +1,54 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.2'
+	id 'io.spring.dependency-management' version '1.1.0'
+	id "org.web3j" version '4.8.8'
+	id "com.github.node-gradle.node" version '3.1.1'
+	id "org.web3j.solidity" version '0.3.5'
+}
+group = 'com.healthive'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-mail'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-websocket'
+	implementation 'org.springframework.boot:spring-boot-starter-validation:3.0.2'
+	implementation 'org.springframework.boot:spring-boot-configuration-processor:3.0.2'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-api:2.0.2'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'com.amazonaws:aws-java-sdk-s3:1.12.376'
+	implementation 'org.web3j:core:5.0.0'
+	implementation 'org.web3j:contracts:5.0.0'
+	implementation 'com.google.guava:guava:31.1-jre'
+	implementation 'com.twilio.sdk:twilio:9.2.3'
+	implementation 'org.postgresql:postgresql:42.5.4'
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
+	implementation 'org.modelmapper:modelmapper:3.1.1'
+	implementation 'commons-codec:commons-codec'
+	implementation 'org.json:json:20220924'
+	implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+}
+
+task fatJar(type: Jar) {
+    duplicatesStrategy = 'include'
+}
