@@ -62,6 +62,20 @@
 <div style="text-align: center; font-size: 20px">
     <a href="https://www.figma.com/file/vXEbkGuapNYJYmHjAbly6h/HealthHive?node-id=4%3A311&t=yveGyp07St4XrpEQ-0"><b>>> Click to view Figma Designs <<</b></a>
 </div>
+
+<div style="border: 1px solid #575757;
+    padding: 20px;
+    overflow: hidden;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;">
+
+https://user-images.githubusercontent.com/103812595/222973721-fb810745-f3f5-47bf-b11e-a429bbaca59c.mp4
+</div>
 <div style="border: 1px solid #575757;
     padding: 20px;
     overflow: hidden;
@@ -101,6 +115,7 @@ An AI-powered personalized medicine platform that leverages blockchain technolog
 * [![Twilio][Twilio.com]][Twilio-url]
 * [![AWS][aws.amazon.com]][Amazon-url]
 * [![Postgres][Postgresql.org]][Postgres-url]
+* [![solidity][Solidity]][Solidity-URL]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -258,3 +273,5 @@ Project Link: [https://github.com/pranavbisaria/HealthHive](https://github.com/p
 [Postgres-url]: https://www.postgresql.org/
 [aws.amazon.com]: https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white
 [Amazon-url]: https://aws.amazon.com/
+[Solidity]: https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white
+[Solidity-URL]: https://www.solidity.io/
